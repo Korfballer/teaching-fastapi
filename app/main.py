@@ -10,9 +10,11 @@ from fastapi import FastAPI
 from .models import Order, Seats
 
 
+# Create an application
 the_app = FastAPI()
 
 
+# Define a trivial restauraunt menu
 menu = {
     "Starters": {
         "Olives": 4,
@@ -56,7 +58,7 @@ def find_any_waiter() -> dict:
 
 
 @the_app.post("/waiter/{name}")
-def find_waiter(name: str = None) -> dict:
+def find_waiter(name: str) -> dict:
     """Speak to a specific waiter.
 
     Args:
@@ -79,6 +81,7 @@ def find_table(seats: Seats) -> dict:
         dict: Table number
     """
     n_seats = seats.seats
+
     output = {"Table number": 100 + n_seats}
 
     return output
