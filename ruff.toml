@@ -1,0 +1,9 @@
+# Documentation: https://beta.ruff.rs/docs/configuration/#using-rufftoml
+# Rules: https://beta.ruff.rs/docs/rules
+
+select = ["E", "F", "D"]
+ignore = [
+    "D100",  # Missing docstring in public module
+    "D211",  # `one-blank-line-before-class` (D203) and `no-blank-line-before-class` (D211) are incompatible
+    "D213",  # `multi-line-summary-first-line` (D212) and `multi-line-summary-second-line` (D213) are incompatible.
+    ]

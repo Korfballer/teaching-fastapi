@@ -1,0 +1,39 @@
+{
+    // Colour theme (including background)
+    "workbench.colorTheme": "Default Dark+",
+    // Vertical rulers
+    "editor.rulers": [
+        80,
+        120
+    ],
+    // Linting
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true,
+    // Ruff linting
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "organizeImports": true,
+        },
+    },
+    // Unit testing
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    // Get the terminal working on Windows as per:
+    // https://stackoverflow.com/questions/56199111/visual-studio-code-cmd-error-cannot-be-loaded-because-running-scripts-is-disabl
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": [
+                "-ExecutionPolicy",
+                "Bypass"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+}
