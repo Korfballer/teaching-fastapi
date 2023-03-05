@@ -1,6 +1,6 @@
 # Teaching FastAPI
 
-This repository has been built on the Windows Operating System and has not been tested on a Linux.
+This repository has been built on a Windows Operating System and has not been tested on Linux.
 
 ## 1. Setup
 
