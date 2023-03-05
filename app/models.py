@@ -15,6 +15,7 @@ from pydantic import BaseModel, validator
 # n/a
 
 class ExpandedModel(BaseModel):
+    """Expand on the pydantic BaseModel to make JSON serialization easier."""
 
     def to_dict(self):
         """
