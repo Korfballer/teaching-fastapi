@@ -1,0 +1,22 @@
+# Based on https://pre-commit.com/#intro
+# and https://pre-commit.com/hooks.html
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: debug-statements
+      - id: check-added-large-files
+        args: ["--maxkb=500"]
+      - id: check-ast
+      - id: check-merge-conflict
+
+  # Super fast linter replaces isort, pydocstyle, flake8, etc.
+  - repo: http://github.com/charliermarsh/ruff-pre-commit
+    # Ruff version
+    rev: v0.0.138
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]

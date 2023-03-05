@@ -1,0 +1,26 @@
+# GENERAL
+
+## Log files
+*.log
+
+## Temporary files
+*~$*
+
+# PYTHON
+
+## General
+*.py[cod]
+*/__pycache__/
+*$py.class
+
+## Testing
+*/.pytest_cache/
+
+## Linting
+*/.ruff_cache/
+
+## Building
+*.egg-info
+
+## Virtual environment
+venv/

@@ -1,0 +1,19 @@
+{
+    // Based on https://code.visualstudio.com/docs/editor/tasks
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile requirements (Windows)",
+            "type": "shell",
+            "command": "./venv/Scripts/activate; pip install pip-tools; pip-compile requirements.in; pip-compile requirements-dev.in",
+        },
+        // Warning: Untested
+        {
+            "label": "Compile requirements (Linux)",
+            "type": "shell",
+            "command": "source ./venv/bin/activate; pip install pip-tools; pip-compile requirements.in; pip-compile requirements-dev.in",
+        },
+    ]
+}
