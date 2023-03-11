@@ -10,6 +10,8 @@
     "files.trimTrailingWhitespace": true,
     "editor.formatOnSave": true,
     "files.insertFinalNewline": true,
+    // Virtual environment
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv",
     // Ruff linting
     "[python]": {
         "editor.codeActionsOnSave": {
