@@ -48,7 +48,7 @@ class Useful:
 
     def test_root_via_requests(self, testclient):
         """Test welcome endpoint using requests."""
-        # URL as defined in ./.vscode/launch.json, NOT app/main.py
+        # URL as defined in .vscode/launch.json, NOT app/main.py
         url = "http://127.0.0.1:8000"
 
         try:
