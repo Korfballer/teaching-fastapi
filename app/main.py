@@ -110,8 +110,6 @@ def post_order(order: Order) -> dict:
     food = order.food
     drinks = order.drinks
 
-    print(order)
-
     return {
         "Food in its way": food,
         "Drinks on their way": drinks,
